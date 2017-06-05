@@ -1,0 +1,19 @@
+Centos安装Tengine步骤
+
+1.wget http://tengine.taobao.org/download/tengine-2.2.0.tar.gz
+
+2.tar -zxvf tengine-2.2.0.tar.gz
+
+3.检查Tengine安装依赖库
+yum install gcc-c++  
+yum -y install pcre pcre-devel  
+yum -y install zlib zlib-devel  
+yum -y install openssl openssl-devel
+
+4.输入安装命令并指定安装路径 ./configure --prefix=/soft/nginx
+
+5.编译和安装make，make install
+
+6.进入安装，目前启动sbin/nginx,浏览器输入本机公网地址。看到欢迎页面即表示安装成功
+
+7.配置nginx.conf
